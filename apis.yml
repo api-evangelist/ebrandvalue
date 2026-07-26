@@ -1,7 +1,27 @@
 aid: ebrandvalue
 name: Ebrandvalue
-description: Ebrandvalue is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  eBrandValue is a brand intelligence and social media analytics platform that
+  converts real-time social data into actionable marketing metrics. It measures
+  brand mindshare, tracks competitive market-share fluctuations, predicts sales
+  weeks in advance, surfaces influencers and effective marketing tactics, and
+  provides crisis and reputation support. The product is delivered as a SaaS
+  web dashboard with one-click export of data and visualizations for reports
+  and presentations. eBrandValue does not currently publish a public developer
+  API, OpenAPI specification, or client SDKs; access is through the hosted
+  application. Clients include major consumer brands and financial institutions.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.ebrandvalue.com/static/img/social-ebrandvalue-new.jpg
 url: https://raw.githubusercontent.com/api-evangelist/ebrandvalue/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +29,46 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-headquarters: Mountain View, CA
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Brand Analytics
+- Social Media Analytics
+- Brand Intelligence
+- Marketing
+- Sales Prediction
+- Reputation Management
+- SaaS
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ebrandvalue-domain-security.yml
+- type: Website
+  url: https://www.ebrandvalue.com
+- type: Login
+  url: https://app.ebrandvalue.com
+- type: Pricing
+  url: https://www.ebrandvalue.com/en/pricing/
+- type: Support
+  url: https://www.ebrandvalue.com/en/contact-us/
+- type: Blog
+  url: https://www.ebrandvalue.com/en/blog/
+- type: TermsOfService
+  url: https://www.ebrandvalue.com/en/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.ebrandvalue.com/en/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/ebrandvalue
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
