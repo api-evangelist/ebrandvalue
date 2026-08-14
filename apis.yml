@@ -32,7 +32,7 @@ x-tier-reason: portfolio-lead
 x-headquarters: Mountain View, CA
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-13'
 tags:
 - Company
 - Brand Analytics
@@ -61,14 +61,49 @@ common:
 - type: PrivacyPolicy
   url: https://www.ebrandvalue.com/en/privacy-policy/
 - type: GitHubOrganization
-  url: https://github.com/ebrandvalue
+  url: https://github.com/eBrandValue
+- type: BlogRSS
+  url: https://www.ebrandvalue.com/latest/feed/
+- type: Plans
+  url: plans/ebrandvalue-plans-pricing.yml
+- type: Conformance
+  url: conformance/ebrandvalue-conformance.yml
+- type: LLMsTxt
+  url: llms/ebrandvalue-llms.txt
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ebrandvalue
+- type: Twitter
+  url: https://twitter.com/eBrandValue
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 4
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    eBrandValue ships only an end-user SaaS dashboard — its 398-URL sitemap contains no
+    developer, docs or API path, the word "API" appears nowhere on the product, pricing,
+    why-us or terms pages, app.ebrandvalue.com is a customer sign-in wall, and
+    docs.ebrandvalue.com is a Google Workspace alias that redirects to Google Drive
+    sign-in rather than a documentation host.
+  evidence:
+  - url: https://www.ebrandvalue.com/openapi.json
+    status: 404
+  - url: https://app.ebrandvalue.com/openapi.json
+    status: 404
+  - url: https://app.ebrandvalue.com/graphql
+    status: 404
+  - url: https://www.ebrandvalue.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.ebrandvalue.com/llms.txt
+    status: 404
+  - url: https://www.ebrandvalue.com/sitemap.xml
+    status: 200
+  checked: '2026-08-13'
