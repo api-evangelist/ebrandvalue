@@ -1,0 +1,83 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.ebrandvalue.com/en/pricing/
+docs: https://www.ebrandvalue.com/en/pricing/
+model: quote-only
+currency: null
+billing_period: null
+self_serve: false
+note: >-
+  eBrandValue publishes three NAMED enterprise packages but no prices, no currency, no
+  billing period and no quotas. The page states pricing is "flexible and custom ... based
+  on the client needs" and routes every tier to a contact form for a quote. There is no
+  self-serve signup and no metered/API pricing of any kind — the product is sold as a
+  seat-based enterprise SaaS dashboard. Tier contents below are the published feature
+  bundles, transcribed verbatim from the comparison table; nothing is inferred.
+plans:
+- name: Basic Enterprise
+  price: null
+  currency: null
+  billing_period: null
+  quota: null
+  overage: null
+  contact_sales: true
+  positioning: >-
+    For clients interested in generating meaningful insights rather than simple monitoring
+    of data. Enables definition of brand-affinity changing trends.
+  features:
+  - Full access to the platform
+  - Sector-wide corporate brand-specific monitoring
+  - Alarm (crisis) reporting
+  - System training
+  - Support
+  - 1 Account Manager
+- name: Advanced Enterprise
+  price: null
+  currency: null
+  billing_period: null
+  quota: null
+  overage: null
+  contact_sales: true
+  positioning: >-
+    For proactive managers where brand-affinity growth and management becomes a high
+    priority.
+  features:
+  - Sentiment analysis custom training
+  - Monthly / Weekly / Daily automatic reporting
+  - Event-specific dissemination / analytics
+  - 1 Influencer Analysis / Month
+  - Historical Data Integration (6 or 12 months)
+  - Dedicated Management Team
+  - Generic Product-Line Specific Analyses
+  - Custom Reporting
+- name: Smart Enterprise
+  price: null
+  currency: null
+  billing_period: null
+  quota: null
+  overage: null
+  contact_sales: true
+  positioning: >-
+    Enables prescriptive brand positioning and management where sales-generating brand
+    dimensions are defined and actively managed.
+  features:
+  - Brand affinity and switching profiling
+  - CEO / Big-Screen Dashboards
+  - Campaign Analysis
+  - Dedicated Management Team
+  - VOC & KPI Reporting
+  - NPS / Sales / KPI Periodic Forecasting
+  - LifeStyle Analysis
+  - MBNS + Sales Generating Brand equity definition tracking
+plan_count: 3
+priced_plan_count: 0
+free_tier: false
+trial: false
+api_pricing: false
+api_pricing_note: >-
+  No API, API plan, call quota or per-request pricing appears anywhere on the pricing page
+  or elsewhere on the site. Access is to the hosted dashboard only.
+x-evidence:
+- url: https://www.ebrandvalue.com/en/pricing/
+  status: 200
+  fetched: '2026-08-13'

@@ -1,0 +1,87 @@
+generated: '2026-08-13'
+method: probed
+source: live GET probes of every eBrandValue host on 2026-08-13
+note: >-
+  Every /.well-known/ path probed on every eBrandValue host returned HTTP 404 with the
+  site's standard HTML 404 page. Nothing is served. NO WellKnown or SecurityTxt pointer
+  is emitted in apis.yml — this file records a verified ABSENCE, not a presence.
+hosts:
+- host: www.ebrandvalue.com
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /security.txt
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+- host: ebrandvalue.com
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /security.txt
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+- host: app.ebrandvalue.com
+  note: >-
+    Customer sign-in application (Django-style login at /accounts/login/, static assets on
+    ebrandvalue.blob.core.windows.net). Returns its own SPA-style HTML 404 body for every
+    unknown path, so no 200 was accepted as a document.
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+- host: docs.ebrandvalue.com
+  note: >-
+    NOT a documentation host. Resolves to a Google Workspace alias that answers HTTP 200
+    with a "Sign in - Google Accounts" redirect page to drive.google.com for every path,
+    including /openapi.json. Treated as a miss on all paths — a 200 carrying an HTML
+    sign-in shell is not a document.
+  probes:
+  - path: /
+    status: 200
+    file: null
+    accepted: false
+  - path: /openapi.json
+    status: 200
+    file: null
+    accepted: false
+summary:
+  paths_probed: 20
+  documents_found: 0
+  security_txt: false
+  agent_card: false
+  api_catalog: false

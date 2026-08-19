@@ -1,0 +1,67 @@
+# eBrandValue
+
+> eBrandValue is a brand intelligence and social media analytics platform that turns
+> real-time public social data into marketing metrics: brand mindshare, competitive
+> market-share movement, sales prediction weeks ahead of the quarter, influencer
+> discovery, campaign effectiveness, and crisis/reputation monitoring. It is delivered
+> as a hosted SaaS dashboard with one-click export of data and visualizations.
+
+## Important: no public API
+
+As of 2026-08-13, eBrandValue publishes **no public API, no OpenAPI/Swagger definition,
+no GraphQL endpoint, no MCP server, no webhooks, no SDKs and no developer portal.**
+Access to the product is through the hosted web application at https://app.ebrandvalue.com,
+which requires an account issued through a sales conversation. Do not attempt to
+construct API calls against eBrandValue hosts — none are documented or supported.
+
+Verified on 2026-08-13: `/openapi.json`, `/swagger.json`, `/api-docs`, `/docs`, `/graphql`,
+`/llms.txt` and every probed `/.well-known/` path return HTTP 404 on both
+www.ebrandvalue.com and app.ebrandvalue.com. `docs.ebrandvalue.com` is a Google Workspace
+alias that redirects to Google Drive sign-in, not a documentation host.
+
+## Product
+
+- [The Product](https://www.ebrandvalue.com/en/product/): capability overview of the platform
+- [Why eBrandValue](https://www.ebrandvalue.com/en/why-ebrandvalue/): positioning and methodology
+- [Request a demo](https://www.ebrandvalue.com/en/demo/): sales-led evaluation path
+- [Sign in](https://app.ebrandvalue.com): customer application
+
+## Pricing
+
+- [Pricing](https://www.ebrandvalue.com/en/pricing/): three named enterprise packages —
+  Basic Enterprise, Advanced Enterprise and Smart Enterprise. No prices, currency, billing
+  period or quotas are published; every tier routes to a contact form for a custom quote.
+  There is no self-serve signup, no free tier and no metered/API pricing.
+
+## Content
+
+- [Blog](https://www.ebrandvalue.com/en/blog/): brand analytics case studies and methodology posts
+- [Blog RSS](https://www.ebrandvalue.com/latest/feed/): full feed
+- [Whitepapers](https://www.ebrandvalue.com/en/whitepaper/)
+- [Partners](https://www.ebrandvalue.com/en/partners/)
+
+## Company
+
+- [About](https://www.ebrandvalue.com/en/about/)
+- [Contact](https://www.ebrandvalue.com/en/contact-us/)
+- [GitHub organization](https://github.com/eBrandValue): 15 public repositories, 14 of them
+  forks of third-party projects (selenium, tweepy, PaddleOCR, instagram-private-api,
+  azure-sdk-for-python and similar). No first-party client library or SDK is published there
+  or in any package registry (npm, PyPI, RubyGems, crates.io searched 2026-08-13).
+- Site is bilingual: English under `/en/`, Turkish under `/tr/`.
+
+## Legal
+
+- [Terms of Use](https://www.ebrandvalue.com/en/terms-of-use/)
+- [Privacy Policy](https://www.ebrandvalue.com/en/privacy-policy/): includes a
+  "GDPR & EU Privacy Regulation" section describing eBrandValue's role as data controller
+  and the categories of publicly shared social data it processes.
+
+## Optional
+
+- [API Evangelist profile](https://apis.io/provider/ebrandvalue/)
+
+---
+generated: 2026-08-13
+method: generated
+source: apis.yml + live probes of ebrandvalue.com hosts (no provider-published /llms.txt; HTTP 404)
