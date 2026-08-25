@@ -9,20 +9,20 @@
       "method": "feed"
     },
     {
-      "source": "https://www.ebrandvalue.com/en/contact-us/",
-      "feed_url": "https://www.ebrandvalue.com/latest/feed/",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
-    },
-    {
       "source": "https://github.com/eBrandValue",
       "feed_url": "https://github.com/eBrandValue",
       "title": "",
       "saved": 0,
       "method": "none"
+    },
+    {
+      "source": "https://www.ebrandvalue.com/en/contact-us/",
+      "feed_url": "https://www.ebrandvalue.com/latest/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
     }
   ],
   "post_count": 10,
-  "fetched": "2026-08-15T12:22:01Z"
+  "fetched": "2026-08-22T20:20:02Z"
 }
