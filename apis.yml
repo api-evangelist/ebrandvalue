@@ -10,6 +10,17 @@ description: >-
   and presentations. eBrandValue does not currently publish a public developer
   API, OpenAPI specification, or client SDKs; access is through the hosted
   application. Clients include major consumer brands and financial institutions.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
