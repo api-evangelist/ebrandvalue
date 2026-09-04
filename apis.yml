@@ -22,15 +22,17 @@ deliveryModel:
   generated: '2026-08-28'
   method: derived
 accessModel:
-  pricing: unknown
-  onboarding: unknown
+  pricing: paid
+  onboarding: approval
   trial: false
   try_now: false
   public: false
-  label: Unknown
+  label: Paid · Requires approval
   confidence: low
-  source: []
-  generated: '2026-07-22'
+  source:
+  - plans
+  - security
+  generated: '2026-09-03'
   method: derived
 image: https://www.ebrandvalue.com/static/img/social-ebrandvalue-new.jpg
 url: https://raw.githubusercontent.com/api-evangelist/ebrandvalue/refs/heads/main/apis.yml
